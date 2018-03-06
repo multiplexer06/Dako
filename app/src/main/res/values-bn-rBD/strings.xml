@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tomtom</string>
+    <string name="title_activity_login">Login</string>
+    <string name="facebook_app_id">193892514533794</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">175cb59f2395d33f7df8408da82449b3</string>
+    <string name="fb_login_protocol_scheme">fb193892514533794</string>
+
+    <string name="user_name">নাম*</string>
+    <string name="gender_selection">লিঙ্গ নির্ধারণ করুন*</string>
+    <string name="age">বয়স</string>
+    <string name="male">পুরুষ</string>
+    <string name="female">মহিলা </string>
+    <string name="email">ইমেইল</string>
+    <string name="location_title">স্থান নির্ধারণ করুন</string>
+    <string name="dhaka">ঢাকা</string>
+    <string name="chittagong">চট্রগ্রাম</string>
+    <string name="save">সেভ করুন</string>
+    <string name="mobile_number">মোবাইল</string>
+
+
+
+    <string name="history">হিস্টোরি </string>
+
+
+
+    <string name="freer_ride">ফ্রি রাইড </string>
+    <string name="promotions">প্রমোশনস</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="log_out">লগ আউট</string>
+    <string name="about">সম্মন্ধে</string>
+    <string name="support">সাপোর্ট</string>
+    <string name="bangla">English</string>
+    <string name="connect_with_facebook">ফেসবুকে সংযুক্ত হোন</string>
+    <string name="first_girl_then_boy_biker">প্রথমে মেয়ে,তারপর ছেলে বাইকার</string>
+    <string name="only_boy_biker">শুধুমাত্র পুরুষ বাইকার</string>
+    <string name="only_girl_biker">শুধুমাত্র মহিলা বাইকার</string>
+    <string name="call_for_support">সাপোর্ট এর জন্য কল করুন</string>
+    <string name="need_any_support">কোনো প্রকার সয়াহতা প্রয়োজন ?</string>
+    <string name="loading">লোডিং...</string>
+    <string name="find_your_ride">আপনার রাইড খুঁজে নিন</string>
+    <string name="order_a_ride">রাইড অর্ডার করুন </string>
+    <string name="invite_your_friend">আপনার বন্ধুদের ইনভাইট করুন</string>
+    <string name="get_a_nice_discount">ডিসকাউন্ট </string>
+    <string name="apply_here">এখানে এপলাই করুন</string>
+    <string name="got_a_promo_code">Got a promo code?</string>
+    <string name="here_will_be_the_ad">HERE WILL BE THE AD</string>
+    <string name="login_with">লগইন করুন</string>
+    <string name="phone_number">ফোন নম্বর</string>
+</resources>

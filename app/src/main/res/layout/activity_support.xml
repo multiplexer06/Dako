@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    tools:context="com.lab.multiplexer.tomtom.Activity.SupportActivity">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true">
+    <TextView
+        android:id="@+id/support_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/need_any_support"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_large"/>
+    <ImageView
+        android:id="@+id/img_support"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/support_title"
+        android:src="@drawable/agent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_default"
+        />
+
+    <Button
+        android:id="@+id/suport_call_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_support"
+        android:layout_margin="@dimen/margin_default"
+        android:padding="16dp"
+        android:background="@drawable/button"
+        android:text="@string/call_for_support"
+        android:textColor="@android:color/white"
+        android:elevation="5dp"
+        />
+</RelativeLayout>
+
+
+
+</RelativeLayout>

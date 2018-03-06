@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "480542109051",
+    "firebase_url": "https://tomtomdriver-e4eb4.firebaseio.com",
+    "project_id": "tomtomdriver-e4eb4",
+    "storage_bucket": "tomtomdriver-e4eb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480542109051:android:264f644565405dc5",
+        "android_client_info": {
+          "package_name": "com.lab.multiplexer.tomtomdriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480542109051-d90vd9rsp6sanhk6rou1gjup2rdn1j9a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lab.multiplexer.tomtomdriver",
+            "certificate_hash": "f15ef860a746ea68551cd60aca47ccfe86e97ff0"
+          }
+        },
+        {
+          "client_id": "480542109051-9s7barduftap64ri0s52mgngabp30ngr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lab.multiplexer.tomtomdriver",
+            "certificate_hash": "f0795e5d6e8ee0979673f5e25e3844afbf021758"
+          }
+        },
+        {
+          "client_id": "480542109051-olkdf35dekucgrs31eb1hunkm5asrqvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx6Q-2YRqcPaAsSKFpQAHukpNg4Ojlecc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480542109051-olkdf35dekucgrs31eb1hunkm5asrqvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480542109051:android:8da420f03768e713",
+        "android_client_info": {
+          "package_name": "com.lab.multiplexer.tomtom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480542109051-avrv4a8q5k213k1jh44sdudic6h2chvt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lab.multiplexer.tomtom",
+            "certificate_hash": "f15ef860a746ea68551cd60aca47ccfe86e97ff0"
+          }
+        },
+        {
+          "client_id": "480542109051-fsfthiohddfgajmv0f7qli4fib2pelbm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lab.multiplexer.tomtom",
+            "certificate_hash": "f0795e5d6e8ee0979673f5e25e3844afbf021758"
+          }
+        },
+        {
+          "client_id": "480542109051-olkdf35dekucgrs31eb1hunkm5asrqvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBx6Q-2YRqcPaAsSKFpQAHukpNg4Ojlecc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480542109051-olkdf35dekucgrs31eb1hunkm5asrqvk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lab.multiplexer.tomtom">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="com.example.majid.mapdemo.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permissions.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <permission
+        android:name="com.example.majid.mapdemo.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:name="com.lab.multiplexer.tomtom.Activity.Helper.AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/bike"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.lab.multiplexer.tomtom.Activity.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.lab.multiplexer.tomtom.Activity.MainActivity" />
+
+        <receiver
+            android:name="com.lab.multiplexer.tomtom.Activity.Helper.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="com.lab.multiplexer.tomtom.Activity.Firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.lab.multiplexer.tomtom.Activity.Firebase.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitActivity"
+            android:theme="@style/AppLoginTheme"
+            tools:replace="android:theme" />
+
+        <meta-data
+            android:name="com.facebook.accountkit.FacebookAppEventsEnabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDTf_et4UJdscQ6G1igJ173OJ2kXWUbTno" />
+
+        <activity android:name="com.lab.multiplexer.tomtom.Activity.Login" />
+        <activity android:name="com.lab.multiplexer.tomtom.Activity.Registration"></activity>
+        <activity android:name="com.lab.multiplexer.tomtom.Activity.Settings"
+            android:configChanges="locale"
+            />
+        <activity android:name="com.lab.multiplexer.tomtom.Activity.MapActivity"></activity>
+        <activity android:name="com.lab.multiplexer.tomtom.Activity.EditProfileActivity"></activity>
+        <activity android:name="com.lab.multiplexer.tomtom.Activity.SupportActivity"
+            android:label="Support">
+
+        </activity>
+    </application>
+
+</manifest>

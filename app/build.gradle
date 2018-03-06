@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "27.0.1"
+    useLibrary 'org.apache.http.legacy'
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    defaultConfig {
+        applicationId "com.lab.multiplexer.tomtom"
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //noinspection GradleCompatible
+    compile 'com.android.support:appcompat-v7:27.0.1'
+    compile 'com.android.support:design:27.0.1'
+    compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.facebook.android:account-kit-sdk:4.+'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.mcxiaoke.volley:library:1.0.19'
+    compile 'org.apache.httpcomponents:httpcore:4.4.1'
+    compile 'com.google.android.gms:play-services-maps:11.8.0'
+    compile 'com.google.android.gms:play-services-location:11.8.0'
+    compile 'com.google.android.gms:play-services-places:11.8.0'
+    compile 'org.apache.httpcomponents:httpmime:4.2.1'
+    compile 'com.google.firebase:firebase-database:11.8.0'
+    compile 'com.google.firebase:firebase-messaging:11.8.0'
+    compile 'com.google.firebase:firebase-core:11.8.0'
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'io.paperdb:paperdb:2.5'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    testCompile 'junit:junit:4.12'
+}
+
+
+apply plugin: 'com.google.gms.google-services'

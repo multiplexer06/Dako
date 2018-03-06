@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutTop"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/cover_image">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/layoutTop"
+        android:padding="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edit_name_wraper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp">
+
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/user_name"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/gender_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_name_wraper"
+            android:padding="6dp"
+            android:text="@string/gender_selection"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <RadioGroup
+
+            android:id="@+id/radioSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender_title"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioMale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Male"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <RadioButton
+                android:id="@+id/radioFemale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="Female"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        </RadioGroup>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edit_age_wraper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioSex"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/edtAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/age"
+                android:inputType="text" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/edit_email_wraper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_age_wraper"
+            android:layout_marginTop="5dp">
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:id="@+id/location_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_email_wraper"
+            android:paddingLeft="8dp"
+            android:text="@string/location_title"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+        <RadioGroup
+            android:id="@+id/radioLocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location_title"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioDhaka"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/dhaka"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+
+            <RadioButton
+                android:id="@+id/radioCtg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="@string/chittagong"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radioLocation"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/button"
+            android:text="@string/save"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/saveBtn"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_above="@id/layoutBottom"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-46dp"
+        android:src="@drawable/profile_picture"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/add"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_above="@id/layoutBottom"
+        android:layout_alignBottom="@+id/profile_image"
+        android:layout_alignRight="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_camera"
+        app:civ_border_color="@android:color/white"
+        app:civ_border_width="2dp" />
+</RelativeLayout>
